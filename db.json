@@ -1,0 +1,24 @@
+{
+  "features": [
+    {
+      "id": 1,
+      "name": "Marca",
+      "format": "text"
+    },
+    {
+      "name": "Tamanho",
+      "format": "number",
+      "id": 2
+    },
+    {
+      "name": "Montagem",
+      "format": "boolean",
+      "id": 3
+    },
+    {
+      "name": "Vidro",
+      "format": "boolean",
+      "id": 4
+    }
+  ]
+}
