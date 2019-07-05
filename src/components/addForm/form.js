@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
+import CreateForm from "./createForm";
+import GetForm from "./getForm";
 
 const URL = "http://localhost:3003/features";
 
@@ -24,11 +26,10 @@ class Form extends Component {
   }
 
   saveData() {
-    axios
-      .post(`${URL}`, {
-        name: this.state.name,
-        format: this.state.format
-      })
+    axios.post(`${URL}`, {
+      name: this.state.name,
+      format: this.state.format
+    });
   }
 
   changeName(e) {
@@ -46,33 +47,15 @@ class Form extends Component {
   render() {
     return (
       <div className="App">
-        <form>
-          <label>Nome: </label>
-          <input type="text" onChange={this.changeName} />
+        <CreateForm
+          name={this.state.name}
+          format={this.state.format}
+          saveData={this.saveData}
+          changeName={this.changeName}
+          changeFormat={this.changeFormat}
+        />
 
-          <label>Formato: </label>
-          <select onChange={this.changeFormat}>
-            <option value="text">Texto</option>
-            <option value="number">Número</option>
-            <option value="boolean">Booleano</option>
-          </select>
-
-          <button onClick={this.saveData}>Salvar</button>
-        </form>
-
-        {this.state.features.map((input, index) => (
-          <div key={index}>
-            <label>{input.name}</label>
-            {input.format === "boolean" ? (
-              <select>
-                <option>Sim</option>
-                <option>Não</option>
-              </select>
-            ) : (
-              <input type={input.format} />
-            )}
-          </div>
-        ))}
+        <GetForm features={this.state.features} />
       </div>
     );
   }

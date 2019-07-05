@@ -19,6 +19,16 @@
       "name": "Vidro",
       "format": "boolean",
       "id": 4
+    },
+    {
+      "name": "teste",
+      "format": "text",
+      "id": 5
+    },
+    {
+      "name": "teste2",
+      "format": "number",
+      "id": 6
     }
   ]
 }
