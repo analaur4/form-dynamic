@@ -1,11 +1,15 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import App from '../pages/app';
+import App from '../pages/createForm';
+import ReadForm from '../pages/readForm';
+import Answers from '../components/admin/answers/form';
 
 const Routes = () => (
     <Switch>
-        <Route path="/" component={App}/>
+        <Route exact path="/" component={App}/>
+        <Route path="/getform" component={ReadForm}/>
+        <Route path="/answers" component={Answers}/>
     </Switch>
 );
 

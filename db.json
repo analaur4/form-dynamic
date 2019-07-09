@@ -21,14 +21,37 @@
       "id": 4
     },
     {
-      "name": "teste",
-      "format": "text",
+      "name": "Tipo de Madeira",
+      "format": "",
       "id": 5
+    }
+  ],
+  "form": [
+    {
+      "value": {
+        "Marca": "Teste",
+        "Tamanho": "123",
+        "Vidro": "Não"
+      },
+      "id": 1
     },
     {
-      "name": "teste2",
-      "format": "number",
-      "id": 6
+      "value": {
+        "Marca": "Testar",
+        "Tamanho": "321",
+        "Vidro": "Sim",
+        "Montagem": "Não"
+      },
+      "id": 2
+    },
+    {
+      "value": {
+        "Marca": "Teste",
+        "Tamanho": "123",
+        "Montagem": "Não",
+        "Vidro": "Não"
+      },
+      "id": 3
     }
   ]
 }

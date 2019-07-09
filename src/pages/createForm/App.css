@@ -31,3 +31,31 @@
     transform: rotate(360deg);
   }
 }
+
+header {
+  background-color: #282c34;
+  border: 1px solid ;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  width: 500px;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 100%;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 16pt;
+  text-decoration: none;
+}

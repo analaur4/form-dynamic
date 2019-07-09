@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import CreateForm from "./createForm";
-import GetForm from "./getForm";
 
 const URL = "http://localhost:3003/features";
 
@@ -11,7 +10,6 @@ class Form extends Component {
     this.state = {
       name: "",
       format: "",
-      features: []
     };
 
     this.saveData = this.saveData.bind(this);
@@ -46,7 +44,8 @@ class Form extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="form">
+        
         <CreateForm
           name={this.state.name}
           format={this.state.format}
@@ -54,8 +53,6 @@ class Form extends Component {
           changeName={this.changeName}
           changeFormat={this.changeFormat}
         />
-
-        <GetForm features={this.state.features} />
       </div>
     );
   }

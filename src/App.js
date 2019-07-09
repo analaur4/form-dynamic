@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import Routes from './routes';
+import React, { Component } from "react";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./routes";
+import Header from "./components/template/header";
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Routes/>
+        <Header />
+        <Routes />
       </BrowserRouter>
-    )
+    );
   }
 }
 
-export default App
+export default App;
