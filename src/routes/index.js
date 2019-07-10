@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import App from '../pages/createForm';
 import ReadForm from '../pages/readForm';
-import Answers from '../components/admin/answers/form';
+import Answers from '../pages/answers';
 
 const Routes = () => (
     <Switch>

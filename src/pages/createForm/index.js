@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import CreateForm from '../../components/admin/createForm/form';
 
 function App() {

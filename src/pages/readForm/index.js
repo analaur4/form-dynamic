@@ -1,5 +1,4 @@
 import React from "react";
-import './App.css'
 
 import GetForm from '../../components/user/readForm/form';
 

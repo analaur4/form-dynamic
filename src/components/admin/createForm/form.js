@@ -45,7 +45,6 @@ class Form extends Component {
   render() {
     return (
       <div className="form">
-        
         <CreateForm
           name={this.state.name}
           format={this.state.format}

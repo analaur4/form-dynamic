@@ -24,10 +24,6 @@ class Form extends Component {
     axios.get(`${URL}`).then(resp => this.setState({ features: resp.data }));
   }
 
-  componentDidMount() {
-    this.refresh();
-  }
-
   saveValue() {
     axios.post(`${url}`, {
       value: this.state.values
@@ -43,6 +39,10 @@ class Form extends Component {
 
   removeInput(id) {
     axios.delete(`${URL}/${id}`).then(resp => this.refresh());
+  }
+
+  componentDidMount() {
+    this.refresh();
   }
 
   render() {

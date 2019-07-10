@@ -13,12 +13,13 @@ class Answers extends Component {
             </tr>
           </thead>
           <tbody>
-            {this.props.values.map((input, index) => (
+            {this.props.values.map((obj, index) => (
               <tr key={index}>
-                <td>{input.value.Marca}</td>
-                <td>{input.value.Tamanho}</td>
-                <td>{input.value.Montagem}</td>
-                <td>{input.value.Vidro}</td>
+                {obj.value
+                  ? Object.keys(obj.value).map((key, index) => {
+                      return <td key={index}>{obj.value[key]}</td>;
+                    })
+                  : null}
               </tr>
             ))}
           </tbody>

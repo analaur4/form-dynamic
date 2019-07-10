@@ -29,29 +29,53 @@
   "form": [
     {
       "value": {
-        "Marca": "Teste",
-        "Tamanho": "123",
-        "Vidro": "Não"
+        "Marca": "qualquer coisa",
+        "Tamanho": "12345",
+        "Montagem": "Não",
+        "Vidro": "Não",
+        "Tipo de Madeira": "asfasfdsf"
       },
       "id": 1
     },
     {
       "value": {
-        "Marca": "Testar",
-        "Tamanho": "321",
+        "Marca": "Motorola",
+        "Tamanho": "15",
+        "Montagem": "Não",
         "Vidro": "Sim",
-        "Montagem": "Não"
+        "Tipo de Madeira": "não possui"
       },
       "id": 2
     },
     {
       "value": {
-        "Marca": "Teste",
-        "Tamanho": "123",
+        "Marca": "LG",
+        "Tamanho": "18",
         "Montagem": "Não",
-        "Vidro": "Não"
+        "Vidro": "Sim",
+        "Tipo de Madeira": "sei lá"
       },
       "id": 3
+    },
+    {
+      "value": {
+        "Marca": "Samsung",
+        "Tamanho": "14",
+        "Montagem": "Não",
+        "Vidro": "Não",
+        "Tipo de Madeira": "não possui"
+      },
+      "id": 4
+    },
+    {
+      "value": {
+        "Marca": "Asus",
+        "Tamanho": "19",
+        "Montagem": "Não",
+        "Vidro": "Sim",
+        "Tipo de Madeira": "não possui"
+      },
+      "id": 5
     }
   ]
 }
