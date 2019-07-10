@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class GetForm extends Component {
   render() {
     return (
-      <div> 
+      <form> 
         {this.props.features.map((input, index) => (
           <div key={index}>
             <label>{input.name}</label>
@@ -28,8 +28,8 @@ class GetForm extends Component {
           </div>
         ))}
 
-        <button onClick={this.props.saveValue}>Salvar</button>
-      </div>
+        <input type="reset" onClick={this.props.saveValue} value="Salvar"/>
+      </form>
     );
   }
 }

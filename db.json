@@ -76,6 +76,16 @@
         "Tipo de Madeira": "não possui"
       },
       "id": 5
+    },
+    {
+      "value": {
+        "Marca": "XXXX",
+        "Tamanho": "000",
+        "Montagem": "Não",
+        "Vidro": "Não",
+        "Tipo de Madeira": "XXXX"
+      },
+      "id": 6
     }
   ]
 }
